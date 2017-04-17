@@ -4,9 +4,10 @@
 	"private": true,
 	"scripts": {
     "open:ios": "react-native run-ios",
-    "start": "npm-run-all --parallel start-packager open:ios lint:watch",
+    "start": "npm-run-all --parallel start-packager open:ios lint:watch test:watch",
     "start-packager": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
+    "test:watch": "npm run test -- --watch",
     "lint": "esw",
     "lint:watch": "npm run lint -- --watch",
     "typecheck": "flow"
