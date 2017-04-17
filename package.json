@@ -1,17 +1,18 @@
 {
-	"name": "StarterKit",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
+  "name": "StarterKit",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
     "open:ios": "react-native run-ios",
-    "start": "npm-run-all --parallel start-packager open:ios lint:watch test:watch",
+    "start": "npm-run-all --parallel start-packager open:ios lint:watch test:watch typecheck:watch",
     "start-packager": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "lint": "esw",
     "lint:watch": "npm run lint -- --watch",
-    "typecheck": "flow"
-	},
+    "typecheck": "flow",
+    "typecheck:watch": "flow-watch"
+  },
   "dependencies": {
     "babel-preset-react-native": "^1.9.1",
     "react": "16.0.0-alpha.6",
@@ -28,6 +29,7 @@
     "eslint-plugin-killua": "^1.0.1",
     "eslint-watch": "^3.1.0",
     "flow-bin": "^0.40.0",
+    "flow-watch": "^1.1.1",
     "jest": "19.0.2",
     "jest-enzyme": "^3.0.1",
     "npm-run-all": "^4.0.2",
@@ -42,6 +44,8 @@
     "extends": "plugin:killua/standard"
   },
   "babel": {
-    "presets": ["react-native"]
+    "presets": [
+      "react-native"
+    ]
   }
 }
