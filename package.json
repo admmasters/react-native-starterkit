@@ -11,7 +11,9 @@
     "lint": "esw",
     "lint:watch": "npm run lint -- --watch",
     "typecheck": "flow",
-    "typecheck:watch": "flow-watch"
+    "typecheck:watch": "flow-watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-preset-react-native": "^1.9.1",
@@ -20,7 +22,8 @@
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
     "redux-immutable-state-invariant": "^2.0.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
@@ -47,5 +50,6 @@
     "presets": [
       "react-native"
     ]
-  }
+  },
+  "snyk": true
 }
