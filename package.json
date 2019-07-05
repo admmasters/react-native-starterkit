@@ -14,27 +14,27 @@
     "typecheck:watch": "flow-watch"
   },
   "dependencies": {
-    "babel-preset-react-native": "^1.9.1",
-    "react": "16.0.0-alpha.6",
-    "react-native": "0.43.3",
-    "react-redux": "^5.0.4",
-    "redux": "^3.6.0",
+    "babel-preset-react-native": "^4.0.1",
+    "react": "16.8.6",
+    "react-native": "0.60.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1",
     "redux-immutable-state-invariant": "^2.0.0",
     "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
-    "babel-jest": "19.0.0",
-    "enzyme": "^2.8.2",
-    "eslint": "^3.19.0",
+    "babel-jest": "24.8.0",
+    "enzyme": "^3.10.0",
+    "eslint": "^6.0.1",
     "eslint-plugin-killua": "^1.0.1",
-    "eslint-watch": "^3.1.0",
-    "flow-bin": "^0.40.0",
+    "eslint-watch": "^5.1.2",
+    "flow-bin": "^0.102.0",
     "flow-watch": "^1.1.1",
-    "jest": "19.0.2",
-    "jest-enzyme": "^3.0.1",
+    "jest": "24.8.0",
+    "jest-enzyme": "^7.0.2",
     "npm-run-all": "^4.0.2",
     "react-native-mock": "^0.3.1",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "react-test-renderer": "16.8.6"
   },
   "jest": {
     "preset": "react-native",
